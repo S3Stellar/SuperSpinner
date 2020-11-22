@@ -1,0 +1,14 @@
+
+E
+java:S16040"(Make this anonymous inner class a lambda(†£°î8Å¤å‡ß.
+X	java:S1257"<This block of commented-out lines of code should be removed.(ñá’È8Ôú¥‹ß.
+L
+java:S1874"/Remove this use of "Handler"; it is deprecated.(’Ú©Š8Å¤å‡ß.
+J
+java:S1604+"(Make this anonymous inner class a lambda(¦µÓûÿÿÿÿ8Å¤å‡ß.
+]	java:S125("<This block of commented-out lines of code should be removed.(æË®ÿÿÿÿÿ8Ü†¥‹ß.
+X	java:S110"<This class has 9 parents which is greater than 5 authorized.(²Ú±Ž8Å¤å‡ß.
+Y
+java:S1128
+"7Remove this unused import 'android.widget.ProgressBar'.(³ñÿŸùÿÿÿÿ8ñ÷¿ˆß.
+]	java:S125/"<This block of commented-out lines of code should be removed.(ÓÜ›™þÿÿÿÿ8òÏ¤‹ß.

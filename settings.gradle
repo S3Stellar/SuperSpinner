@@ -1,0 +1,3 @@
+include ':myspinninglib'
+include ':app'
+rootProject.name = "SuperSpinner"
