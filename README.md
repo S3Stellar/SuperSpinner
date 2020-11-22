@@ -1,0 +1,2 @@
+# SuperSpinner
+Your pretty spinner
