@@ -2,7 +2,7 @@
 <p>A progress bar library for Android that provides <b>customized progress bars.</b></p>
 	
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/S3Stellar/SuperSpinner/blob/master/LICENSE) &nbsp;&nbsp;&nbsp;&nbsp;
-![JitPack](https://img.shields.io/jitpack/v/github/S3Stellar/SuperSpinner))
+![JitPack](https://img.shields.io/jitpack/v/github/S3Stellar/SuperSpinner)
 
 <div>
   <p align="center">Built with ❤︎ by
