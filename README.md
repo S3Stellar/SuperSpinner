@@ -12,7 +12,7 @@
 
 ## 💻 Installation
 Add this in your app's build.gradle file (Project & module):
-```groovy
+```gradle
 allprojects {
 		repositories {
 			...
