@@ -2,13 +2,14 @@
 <p>Your cool loading spinner, customize it with your icon !</b></p>
 	
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/S3Stellar/SuperSpinner/blob/master/LICENSE) &nbsp;&nbsp;&nbsp;&nbsp;
-![JitPack](https://img.shields.io/jitpack/v/github/S3Stellar/SuperSpinner)
+[![](https://jitpack.io/v/S3Stellar/SuperSpinner.svg)](https://jitpack.io/#S3Stellar/SuperSpinner)
 
 <div>
   <p align="center">Built with ❤︎ by
 	  <a href="https://github.com/S3Stellar">Naor Farag</a></p>
 </div>
 
+![Farmers Market Finder Demo](demo/superspinner.gif)
 
 ## 💻 Installation
 Add this in your app's build.gradle file (Project & module):
@@ -22,31 +23,31 @@ allprojects {
 	
 	
 dependencies {
-	implementation 'com.github.S3Stellar:SuperSpinner:0.1.0'
+	implementation 'com.github.S3Stellar:SuperSpinner:0.1.1'
 }
 ```
 ## ❔ Usage
 **Basic Usage**
 </br>
-Minimum SDk version required:23
+Minimum SDk version required: 23
 
 Easily drop this in your activity's xml to start using the loading spinner!
 
-``` 
+```css
  	<com.example.myspinninglib.SuperSpinner
-        android:id="@+id/progressBar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+		android:id="@+id/progressBar"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintLeft_toLeftOf="parent"
+		app:layout_constraintRight_toRightOf="parent"
+		app:layout_constraintTop_toTopOf="parent" />
 
 ```
 Simple usage of show the loading spinner with quote every button click (for 3s)
 ```java
-	List<String> quotesList;
-	    SuperSpinner superSpinner;
+	    List<String> quotesList;
+      	    SuperSpinner superSpinner;
 
 	    @Override
 	    protected void onCreate(Bundle savedInstanceState) {
@@ -55,7 +56,7 @@ Simple usage of show the loading spinner with quote every button click (for 3s)
 		Button btnTap = findViewById(R.id.button);
 
 		quotesList = new ArrayList<>();
-		quotesList.add("Hi");
+		quotesList.add("Loading ...");
 		quotesList.add("Happy New Year");
 		quotesList.add("Hope you have a good day");
 		quotesList.add("Merry Christmas");
