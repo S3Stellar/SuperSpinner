@@ -6,6 +6,7 @@ import android.graphics.drawable.LayerDrawable;
 import android.graphics.drawable.RotateDrawable;
 import android.util.AttributeSet;
 import android.util.Log;
+import android.view.Gravity;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
@@ -24,7 +25,6 @@ public class SuperSpinner extends LinearLayout {
     private List<String> quotesList;
     private ProgressBar progressBar;
     private TextView textView;
-    private boolean showQuotes = false;
     private String loadingText = "";
 
     public SuperSpinner(Context context) {
@@ -65,6 +65,7 @@ public class SuperSpinner extends LinearLayout {
 
     private void createTextView() {
         textView = new TextView(context);
+        textView.setTextAlignment(TEXT_ALIGNMENT_CENTER);
     }
 
     private void createProgressBar(){
@@ -88,19 +89,17 @@ public class SuperSpinner extends LinearLayout {
     }
 
     public void setLoadingText(String text){
-        this.showQuotes = false;
         this.loadingText = text;
         textView.setText(text);
     }
 
     public void setLoadingQuotes(List<String> quotesList){
-        this.showQuotes = true;
         this.quotesList = quotesList;
     }
 
     public void showSpin(){
         this.setVisibility(VISIBLE);
-        if(showQuotes && quotesList != null && !quotesList.isEmpty()){
+        if(quotesList != null && !quotesList.isEmpty()){
             int num = generateQuoteNumber(0, quotesList.size());
             Log.i("LOADING", "setLoadingQuotes: " + num);
             textView.setText(quotesList.get(num));
@@ -113,9 +112,7 @@ public class SuperSpinner extends LinearLayout {
         return ThreadLocalRandom.current().nextInt(min, max);
     }
 
-    public void setShowQuotes(boolean show){
-        this.showQuotes = show;
-    }
+
     public void stopSpin(){
         this.setVisibility(GONE);
     }

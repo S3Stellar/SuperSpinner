@@ -1,12 +1,11 @@
 package com.example.superspinner;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
 import android.widget.Button;
-import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.myspinninglib.SuperSpinner;
 
@@ -23,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Button btnTap = findViewById(R.id.button);
 
         quotesList = new ArrayList<>();
         quotesList.add("Hi");
@@ -30,18 +30,14 @@ public class MainActivity extends AppCompatActivity {
         quotesList.add("Hope you have a good day");
         quotesList.add("Merry Christmas");
 
-        Button btnTap = findViewById(R.id.button);
-
         superSpinner = findViewById(R.id.progressBar);
         superSpinner.setIcon(R.drawable.myafekaicon);
         superSpinner.setLoadingQuotes(quotesList);
-
 
         btnTap.setOnClickListener(v -> {
             superSpinner.showSpin();
             new Handler(Looper.myLooper()).postDelayed(
                     () -> superSpinner.stopSpin(), 3000);
         });
-
     }
 }
