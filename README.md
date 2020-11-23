@@ -21,7 +21,7 @@ allprojects {
 	}
 
 	dependencies {
-	        implementation 'com.github.S3Stellar:SuperSpinner:Tag'
+	        implementation 'com.github.S3Stellar:SuperSpinner:0.1.0'
 	}
 ```
 ## ❔ Usage
@@ -42,8 +42,8 @@ Easily drop this in your activity's xml to start using the loading spinner!
         app:layout_constraintTop_toTopOf="parent" />
 
 ```
-
-```
+Simple usage of show the loading spinner with quote every button click (for 3s)
+```java
 	List<String> quotesList;
 	    SuperSpinner superSpinner;
 
