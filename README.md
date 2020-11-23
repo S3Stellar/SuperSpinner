@@ -22,7 +22,7 @@ allprojects {
 	
 	
 dependencies {
-	implementation 'com.github.S3Stellar:SuperSpinner:0.1.0'
+	implementation 'com.github.S3Stellar:SuperSpinner:0.1.1'
 }
 ```
 ## ❔ Usage
