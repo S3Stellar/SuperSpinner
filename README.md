@@ -29,7 +29,7 @@ allprojects {
 </br>
 Minimum SDk version required:23
 
-Put the following at the bottom of your activity layout xml file. Probably inside a parent Relative Layout tag.
+Easily drop this in your activity's xml to start using the loading spinner!
 
 ``` 
  	<com.example.myspinninglib.SuperSpinner
@@ -42,6 +42,35 @@ Put the following at the bottom of your activity layout xml file. Probably insid
         app:layout_constraintTop_toTopOf="parent" />
 
 ```
+
+```
+	List<String> quotesList;
+	    SuperSpinner superSpinner;
+
+	    @Override
+	    protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_main);
+		Button btnTap = findViewById(R.id.button);
+
+		quotesList = new ArrayList<>();
+		quotesList.add("Hi");
+		quotesList.add("Happy New Year");
+		quotesList.add("Hope you have a good day");
+		quotesList.add("Merry Christmas");
+
+		superSpinner = findViewById(R.id.progressBar);
+		superSpinner.setIcon(R.drawable.myafekaicon);
+		superSpinner.setLoadingQuotes(quotesList);
+
+		btnTap.setOnClickListener(v -> {
+		    superSpinner.showSpin();
+		    new Handler(Looper.myLooper()).postDelayed(
+			    () -> superSpinner.stopSpin(), 3000);
+		});
+	    }
+```
+
 
 ## 🎨 Customization and Attributes
 
