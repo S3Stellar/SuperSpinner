@@ -2,7 +2,7 @@
 <p>Your cool loading spinner, customize it with your icon !</b></p>
 	
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/S3Stellar/SuperSpinner/blob/master/LICENSE) &nbsp;&nbsp;&nbsp;&nbsp;
-![JitPack](https://img.shields.io/jitpack/v/github/S3Stellar/SuperSpinner)
+[![](https://jitpack.io/v/S3Stellar/SuperSpinner.svg)](https://jitpack.io/#S3Stellar/SuperSpinner)
 
 <div>
   <p align="center">Built with ❤︎ by
