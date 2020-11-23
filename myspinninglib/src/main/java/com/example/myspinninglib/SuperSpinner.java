@@ -200,6 +200,7 @@ public class SuperSpinner extends LinearLayout {
 
         /**
          * Initialize using progress_icon.xml for rotate functionality
+         * @return the SpinningLayer object
          */
         public SpinningLayer invoke() {
             layerDrawable = (LayerDrawable) ContextCompat.getDrawable(context, R.drawable.progress_icon);
