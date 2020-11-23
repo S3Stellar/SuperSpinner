@@ -14,15 +14,16 @@
 Add this in your app's build.gradle file (Project & module):
 ```gradle
 allprojects {
-		repositories {
-			...
-			maven { url 'https://jitpack.io' }
-		}
+	repositories {
+		...
+		maven { url 'https://jitpack.io' }
 	}
-
-	dependencies {
-	        implementation 'com.github.S3Stellar:SuperSpinner:0.1.0'
-	}
+}
+	
+	
+dependencies {
+	implementation 'com.github.S3Stellar:SuperSpinner:0.1.0'
+}
 ```
 ## ❔ Usage
 **Basic Usage**
