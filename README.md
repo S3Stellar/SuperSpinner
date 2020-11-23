@@ -28,25 +28,25 @@ dependencies {
 ## ❔ Usage
 **Basic Usage**
 </br>
-Minimum SDk version required:23
+Minimum SDk version required: 23
 
 Easily drop this in your activity's xml to start using the loading spinner!
 
-``` 
+```css
  	<com.example.myspinninglib.SuperSpinner
-        android:id="@+id/progressBar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+		android:id="@+id/progressBar"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintLeft_toLeftOf="parent"
+		app:layout_constraintRight_toRightOf="parent"
+		app:layout_constraintTop_toTopOf="parent" />
 
 ```
 Simple usage of show the loading spinner with quote every button click (for 3s)
 ```java
-	List<String> quotesList;
-	    SuperSpinner superSpinner;
+	    List<String> quotesList;
+      	    SuperSpinner superSpinner;
 
 	    @Override
 	    protected void onCreate(Bundle savedInstanceState) {
@@ -55,7 +55,7 @@ Simple usage of show the loading spinner with quote every button click (for 3s)
 		Button btnTap = findViewById(R.id.button);
 
 		quotesList = new ArrayList<>();
-		quotesList.add("Hi");
+		quotesList.add("Loading ...");
 		quotesList.add("Happy New Year");
 		quotesList.add("Hope you have a good day");
 		quotesList.add("Merry Christmas");
