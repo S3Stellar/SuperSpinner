@@ -1,5 +1,5 @@
-# MultiProgressBar
-<p>A progress bar library for Android that provides <b>customized progress bars.</b></p>
+# SuperSpinner
+<p>Your cool loading spinner, customize it with your icon !</b></p>
 	
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/S3Stellar/SuperSpinner/blob/master/LICENSE) &nbsp;&nbsp;&nbsp;&nbsp;
 ![JitPack](https://img.shields.io/jitpack/v/github/S3Stellar/SuperSpinner)
@@ -42,40 +42,6 @@ Put the following at the bottom of your activity layout xml file. Probably insid
         app:layout_constraintTop_toTopOf="parent" />
 
 ```
-**Description**
-
-<table>
-    <th>Attribute Name</th>
-    <th>Default Value</th>
-    <th>Description</th>
-	<tr>
-		<td>app:barType </td>
-		<td>bouncy_balls</td>
-		<td>Defines the design of progress bar. All the available designs are mentioned below.</td>
-	</tr>
-		<tr>
-		<td>app:text </td>
-		<td>Please wait...</td>
-		<td>The text you want to show below the progress bar.</td>
-	</tr>
-		<tr>
-		<td> app:textSize </td>
-		<td>16sp</td>
-		<td>The size of text you want.</td>
-	</tr>
-		<tr>
-		<td>app:enlarge </td>
-		<td>2</td>
-		<td>This can range from 1 to 10 and enalrges the size of the progress bar.</td>
-	</tr>
-		<tr>
-		<td>app:androidtextColor </td>
-		<td>BLACK</td>
-		<td>This is the color of the text.</td>
-	</tr>
-	</table>
-	
-
 
 ## 🎨 Customization and Attributes
 
@@ -85,34 +51,39 @@ You can programatically customize the progress bar using the following methods:
     <th>Description</th>
     <th>Usage</th>
 		<tr>
-			<td>setScaleType()</td>
-			<td>To set the scale type of progress bar. Default is centerInside.</td>
-			<td>myProgBar.setScaleType(ImageView.ScaleType.CENTER_INSIDE);</td>
+			<td>setIcon(int r)</td>
+			<td>Let you set your own icon as the spinning logo.</td>
+			<td>superSpinner.setIcon(R.drawable.myicon);</td>
 		</tr>
 		<tr>
-			<td>setProgressVector()</td>
-			<td>To set the design of progress bar. All the available designs are mentioned above.</td>
-			<td>myProgBar.setProgressVector(getDrawable(R.drawable.bouncy_balls));</td>
+			<td>setIcon(Drawable d)</td>
+			<td>Let you set your own icon as the spinning logo.</td>
+			<td>superSpinner.setIcon(ContextCompat.getDrawable(context, R.drawable.myicon));</td>
 		</tr>
 		<tr>
-			<td>enlarge()</td>
-			<td>This can range from 1 to 10 and enalrges the size of the progress bar.</td>
-			<td>myProgBar.enlarge(4);</td>
+			<td>setSpinDegree(int d)</td>
+			<td>Let you see the rotation degree your icon will make (rather use 360*N nums)</td>
+			<td>superSpinner.setSpinDegree(1080);</td>
 		</tr>
 		<tr>
-			<td>setTextMsg()</td>
-			<td>The text you want to show below the progress bar.</td>
-			<td>myProgBar.setTextMsg("Loading");</td>
+			<td>setLoadingText(String s)</td>
+			<td>Let you set text under the super spinner</td>
+			<td>superSpinner.setLoadingText("Loading . .  .");</td>
 		</tr>
 		<tr>
-			<td>setTextColor()</td>
-			<td>This sets the color of the text below the progress bar.</td>
-			<td>myProgBar.setTextColor(getColor(R.color.colorPrimary));</td>
+			<td>setLoadingQuotes(ArrayList<String> ql)</td>
+			<td>Let you pass list of quotes to show randomly under the spinner</td>
+			<td>superSpinner.setLoadingQuotes(quotesList);</td>
 		</tr>
 		<tr>
-			<td>setTextSize()</td>
-			<td>This sets the size of the text below the progress bar.</td>
-			<td>myProgBar.setTextSize(24);</td>
+			<td>showSpin()</td>
+			<td>Shows your super spinner.</td>
+			<td>superSpinner.show();</td>
+		</tr>
+		<tr>
+			<td>stopSpin()</td>
+			<td>Hides your super spinner.</td>
+			<td>superSpinner.stop();</td>
 		</tr>
 	</table>
 	
