@@ -9,6 +9,7 @@
 	  <a href="https://github.com/S3Stellar">Naor Farag</a></p>
 </div>
 
+![Farmers Market Finder Demo](demo/superspin.gif)
 
 ## 💻 Installation
 Add this in your app's build.gradle file (Project & module):
